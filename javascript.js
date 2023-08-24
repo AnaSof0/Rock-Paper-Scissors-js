@@ -3,7 +3,10 @@ function getComputerChoice(){
     return(choices[(Math.floor(Math.random() * choices.length))]);
 }
 
-
+/*
+function to play a round, takes in the player's selection and the random 
+computer's choice and outputs who wins
+*/
 function playRound(playerSelection,computerSelection){
     let s;
     let player=playerSelection.toLowerCase();
@@ -52,8 +55,25 @@ window.addEventListener('keydown',function(e){
     else{
         return;
     }
-    
-
-   
-
 });
+
+/*function game5(){
+    let wins=0;
+    let looses=0;
+    while(!someoneWon(wins,looses)){
+        let p = prompt("What's your move?");
+        let c= getComputerChoice();
+        let result = playRound(p,c);
+        if (result == "You win!"){
+            console.log("Yay");
+            wins++;
+        }
+        else if(result=="You lose!"){
+            console.log("Nay");
+            looses++;
+        }
+        else{
+            console.log("May?");
+        }
+    }
+}*/
