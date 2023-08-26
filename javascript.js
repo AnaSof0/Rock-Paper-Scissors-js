@@ -31,10 +31,23 @@ function someoneWon(wins,looses){
     return false;
 };
 
-let playerSelection='';
 
-window.addEventListener('keydown',function(e){
-    console.log(e);
+const Rbtn= document.getElementById('choice Rock');
+const Pbtn=document.getElementById('choice Paper');
+const Sbtn=document.getElementById('choice Scissors');
+
+Rbtn.addEventListener('click',function(){
+    playerSelection ='rock';
+});
+Pbtn.addEventListener('click',function(){
+    playerSelection ='paper';
+});
+Sbtn.addEventListener('click',function(){
+    playerSelection ='scissors';
+});
+
+
+/*
     if (e.key === 'r' || e.key === 'p' || e.key === 's') { // Check for valid keys 'r', 'p', and 's'
         console.log('move?');
         if (e.key=='r'){
@@ -56,7 +69,7 @@ window.addEventListener('keydown',function(e){
         return;
     }
 });
-
+*/
 /*function game5(){
     let wins=0;
     let looses=0;
