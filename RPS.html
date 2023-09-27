@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Rock Paper Scissors Game</title>
     <link rel="stylesheet" type="text/css" href="styles.css" />
     <script src="javascript.js"></script>
 </head>
@@ -11,10 +11,11 @@
     <section class="columns">
         <section class="col-1">
             <h3>G.ames</h3>
+            <center><button id="Play">Click to play</button></center>
             <h1> Rock </h1>
         </section>
 
-        <section class="col-2"> <!--Col-2 is where the buttons will be, everything else is style-->
+        <section class="col-2"> <!-- Col-2 is where the buttons will be, everything else is style -->
             <section class="container1">
                 <section class="left">
                 </section>
@@ -22,17 +23,19 @@
                 </section>
             </section>
             <section class="container2">
+                <h2>Score</h2>
                 <section class="score">
-
+                    <br>
+                    <p>Player: <span class="p-count"> 0 </span></p>
+                    <br><br>
+                    <p>Computer: <span class="c-count"> 0</span></p>
+                    <div id="gameResult"></div>
                 </section>
                 <section class="buttons">
-
-                <button id="choiceRock">Rock</button>
-                <button id="choicePaper">Paper</button>
-                <button id="choiceScissors">Scissors</button>
+                    <button id="choiceRock">Rock</button>
+                    <button id="choicePaper">Paper</button>
+                    <button id="choiceScissors">Scissors</button>
                 </section>
-                
-                
             </section>
             <section class="container3">
                 <section class="left">
@@ -42,34 +45,11 @@
                     <h2>per</h2>
                 </section>
             </section>
-
-
         </section>
         <section class="col-3">
             <p>.</p>
             <h1> Scissors </h1>
-            
         </section>
     </section>
 </body>
-
-
-
-   <!--<h3>G.ames</h3>
-    <section class="Game">
-    <h1>Rock Paper Scissors!</h1>
-    <div class="score">
-        <div class="p_score">
-            <h2> Player </h2>
-            <p class="p-count count">0</p>
-
-        </div>
-        <div class="c_score">
-            <h2> Computer </h2>
-            <p class="c-count count">0</p>
-
-        </div>
-    </div>
-    </section>
-    --> 
-</html> 
+</html>

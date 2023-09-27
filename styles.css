@@ -60,6 +60,12 @@ html,body{
     display:flex;
     justify-content: space-between;
 }
+.score {
+    display: flex;
+    align-items: center;
+    flex-direction: column; 
+}
+
 button{
     padding:8px 16px;
     border-radius:8px;
